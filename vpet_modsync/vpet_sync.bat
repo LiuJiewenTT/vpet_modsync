@@ -27,7 +27,7 @@ REM Script info: Written by LiuJiewenTT on 2023-09-08 21:43:00 +0800
 )
 @set "tmp="
 @for /f "delims=" %%i in ('echo %cd%^|findstr /L "SteamLibrary\steamapps\workshop\content"') do @(set "tmp=%%i")
-if not defined tmp @(
+@if not defined tmp @(
 	echo 未在当前目录的路径中查找到：SteamLibrary\steamapps\workshop\content
 	@EXIT /B 1
 )
