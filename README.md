@@ -4,7 +4,7 @@ Steam创意工坊（VPet）MOD名称：**模组同步**
 
 虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！
 
-![icon](icon.png?raw=true)
+![icon](vpet_modsync/icon.png?raw=true)
 
 ## 安装方法
 
