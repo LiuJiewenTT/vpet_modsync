@@ -1,9 +1,9 @@
 vupmod#模组同步:|author#LiuJiewenTT:|gamever#100:|ver#100:|
-intro#虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器识别到模组的目的！直接打开所在文件夹并运行vpet_sync。:|
+intro#虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！直接打开所在文件夹并运行vpet_sync。要断开连接，运行vpet_sync_break。:|
 
 lang#en:|模组同步#Mod Sync:|Core#Core:|
 lang#zh-Hans:|模组同步#模组同步:|Core#Core 核心:|
 lang#zh-Hant:|模组同步#模組同步:|Core#Core 覈心:|
 
-lang#en:|虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器识别到模组的目的！直接打开所在文件夹并运行vpet_sync。#VPet simulator MOD synchronization or link assist tool, running this tool will create a junction to achieve the goal of allowing the manager to recognize the module without the need for copying or moving. Open the folder directly and run vpet_sync.:|Core#Core:|
-lang#zh-Hant:|虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器识别到模组的目的！直接打开所在文件夹并运行vpet_sync。#虛擬桌寵模擬器模組同步or連結輔助工具，運行此工具將創建軟連接（Junction），以達到不需要複製or移動即可讓管理器識別到模組的目的。直接打開所在資料夾並運行vpet_ sync。:|Core#Core 覈心:|
+lang#en:|虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！直接打开所在文件夹并运行vpet_sync。要断开连接，运行vpet_sync_break。#VPet simulator MOD synchronization or link assist tool. Running this tool will create a junction to achieve the goal of allowing the manager to recognize the module offline or non Steam startup state without the need for copying or moving! Open the folder directly and run vpet_sync. To disconnect, run vpet_sync_break. :|Core#Core:|
+lang#zh-Hant:|虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！直接打开所在文件夹并运行vpet_sync。要断开连接，运行vpet_sync_break。#虛擬桌寵模擬器模組同步or連結輔助工具，運行此工具將創建軟連接（Junction），以達到不需要複製or移動即可讓管理器在離線或非Steam啟動狀態識別到模組的目的！ 直接打開所在資料夾並運行vpet_sync。要斷開連接，運行vpet_sync_break。:|Core#Core 覈心:|

@@ -1,5 +1,5 @@
 REM This is designed for the app: "https://store.steampowered.com/app/1920960/_/".
-REM Script info: Written by LiuJiewenTT on 2023-09-07 16:57:00 +0800
+REM Script info: Written by LiuJiewenTT on 2023-09-08 21:43:00 +0800
 
 
 @setlocal
@@ -24,6 +24,12 @@ REM Script info: Written by LiuJiewenTT on 2023-09-07 16:57:00 +0800
 	)
 	@cd ..
 	@echo cd^(changed^)=!cd!
+)
+@set "tmp="
+@for /f "delims=" %%i in ('echo %cd%^|findstr /L "SteamLibrary\steamapps\workshop\content"') do @(set "tmp=%%i")
+if not defined tmp @(
+	echo 未在当前目录的路径中查找到：SteamLibrary\steamapps\workshop\content
+	@EXIT /B 1
 )
 
 @for /f "delims=" %%i in ('dir /b /A:D 1920960') do @(
