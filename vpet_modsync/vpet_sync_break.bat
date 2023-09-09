@@ -31,6 +31,21 @@ REM 由于是删除连接，故设定更多检查等级（但可能会降低速�
 	)
 	@cd ..
 	@echo cd^(changed^)=!cd!
+) else (
+	@set "tmp="
+	@for /f "delims=" %%i in ('echo %cd%^|findstr /L "SteamLibrary\steamapps\common\VPet\mod"') do @(set "tmp=%%i")
+	@if defined tmp @(
+		:loop2
+		REM 回显开启状态提示当前目录
+		@set "tmp="
+		@for /f "delims=" %%i in ('echo !cd!^|findstr /E "SteamLibrary\steamapps\common\VPet\mod"') do @(set "tmp=%%i")
+		@if not defined tmp @(
+			cd ..
+			@goto:loop2
+		)
+		@cd ..\..\..\workshop\content
+		@echo cd^(changed^)=!cd!
+	)
 )
 @set "tmp="
 @for /f "delims=" %%i in ('echo %cd%^|findstr /L "SteamLibrary\steamapps\workshop\content"') do @(set "tmp=%%i")
