@@ -15,6 +15,36 @@ REM 由于是删除连接，故设定更多检查等级（但可能会降低速�
 ) else (
     echo Defined check_level: %check_level%
 )
+@if not defined reserve_myself (
+    set reserve_myself=true
+    echo [Default option]: reserve_myself=true
+) else (
+    echo Defined reserve_myself: %reserve_myself%
+)
+@if not defined excludes (
+    set "excludes="
+    if /I "%reserve_myself%" == "true" (
+        set reserved_names_myself=3032653569,vpet_modsync
+    )
+    if not defined excludes (
+        set "excludes=!reserved_names_myself!"
+        if not defined excludes (
+            echo [Default option]: excludes [None]
+        ) else (
+            echo [Default option]: excludes=!excludes!
+        )
+    ) else (
+        set excludes=!excludes!,!reserved_names_myself!
+        echo [Default option]: excludes=!excludes!
+    )
+) else (
+    echo Defined excludes: %excludes%
+)
+
+@if ERRORLEVEL 1 (
+    echo 发生未知错误，终止运行。可能是由于预定义选项语法错误。
+    @EXIT /B 2
+)
 
 @echo cd=%cd%
 @REM 校验当前目录
@@ -56,17 +86,24 @@ REM 由于是删除连接，故设定更多检查等级（但可能会降低速�
 
 @for /f "delims=" %%i in ('dir /b /A:D 1920960') do @(
 	if exist "..\..\common\VPet\mod\%%i" ( 
-        set ready_flag=false
+        set ready_flag=NOT_SET
 		echo [VPet\mod\%%i]即将断开连接。
-        if /I "%check_level%" GEQ "1" (
+        @set "tmp="
+		@for /f "delims=" %%j in ('echo %excludes%^|findstr /L "%%i"') do @(set "tmp=%%j")
+		@if defined tmp @(
+            echo [VPet\mod\%%i]属于例外，跳过操作。
+            set ready_flag=false
+        )
+        if /I "!ready_flag!" NEQ "false" if /I "%check_level%" GEQ "1" (
             set "tmp="
             for /f "delims=" %%j in ('dir /A:DL ..\..\common\VPet\mod^|findstr "%%i"^|findstr "JUNCTION"') do @(set "tmp=%%j")
             if defined tmp (
                 set ready_flag=true
             )
-        ) else (
-            set ready_flag=true
         )
+        if /I "!ready_flag!" == "NOT_SET" (
+            set ready_flag=true
+        ) 
         if "!ready_flag!" == "true" (
             rmdir "..\..\common\VPet\mod\%%i"
             if not ERRORLEVEL 1 (
