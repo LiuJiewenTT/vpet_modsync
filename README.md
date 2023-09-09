@@ -24,8 +24,9 @@ Steam创意工坊（VPet）MOD名称：**模组同步**
    
    > Steam创意工坊链接：<https://steamcommunity.com/sharedfiles/filedetails/?id=3032653569>
 3. 手动下载，存入`SteamLibrary\steamapps\workshop\content\`或`SteamLibrary\steamapps\workshop\content\1920960`路径下。
-   
-   > 储存在`SteamLibrary\steamapps\common\VPet\mod\`下会导致程序无法正常运行。
+
+   > Github项目地址：<https://github.com/LiuJiewenTT/vpet_modsync>   
+   > 对于`v1.0.0`版本，储存在`SteamLibrary\steamapps\common\VPet\mod\`下会导致程序无法正常运行。
 
 ## 使用方法
 
