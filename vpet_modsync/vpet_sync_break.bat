@@ -60,7 +60,7 @@ REM 由于是删除连接，故设定更多检查等级（但可能会降低速�
 	set SteamLibraryName=Steam
 ) else (
 	@echo 未在当前工资路径中找到Steam应用存储库SteamLibrary或Steam。
-    @EXIT /B 2
+    @EXIT /B 3
 )
 @set "tmp="
 @for /f "delims=" %%i in ('echo %cd%^|findstr /L "%SteamLibraryName%\steamapps\workshop\content\1920960"') do @(set "tmp=%%i")
