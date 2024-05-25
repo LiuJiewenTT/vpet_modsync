@@ -1,4 +1,4 @@
-vupmod#模组同步:|author#LiuJiewenTT:|gamever#100:|ver#101:|
+vupmod#模组同步:|author#LiuJiewenTT:|gamever#11000:|ver#10002:|
 intro#虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！直接打开所在文件夹并运行vpet_sync。要断开连接，运行vpet_sync_break。:|
 lang#en:|模组同步#Mod Sync:|Core#Core:|
 lang#zh-Hans:|模组同步#模组同步:|Core#Core 核心:|

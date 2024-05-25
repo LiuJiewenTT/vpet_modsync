@@ -43,3 +43,14 @@ Steam创意工坊（VPet）MOD名称：**模组同步**
 
 创建连接是会询问是否允许程序执行。如果你不需要命令行方式或管道通信等特殊用途，建议不要勾选“不再询问”。因为只要勾选了这个选择，不管你是不是选“允许程序所有操作”，**都会使程序本身的执行效率大大下降！**
 
+## 状态
+
+截止至第三次更新（2024年5月25日），收录的合集有 *215* 个，订阅人数已经达到了 *11,130*，好评率为 *98%*，感谢各位朋友的支持！
+
+![image-20240525105310028](README.assets/image-20240525105310028.png)![image-20240525105342683](README.assets/image-20240525105342683.png)
+
+URL: <https://steamcommunity.com/sharedfiles/filedetails/stats/3032653569>
+
+<iframe src="https://steamcommunity.com/sharedfiles/filedetails/stats/3032653569" style="height:600px"></iframe>
+
+
