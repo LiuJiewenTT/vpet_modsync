@@ -1,5 +1,6 @@
 REM This is designed for the app: "https://store.steampowered.com/app/1920960/_/".
-REM Script info: Written by LiuJiewenTT on 2023-09-09 12:46:00 +0800
+REM Script info: Written by LiuJiewenTT on 2024-05-25 11:01:00 +0800
+REM Project Link: "https://github.com/LiuJiewenTT/vpet_modsync"
 
 
 @setlocal

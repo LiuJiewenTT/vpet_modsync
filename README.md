@@ -50,7 +50,3 @@ Steam创意工坊（VPet）MOD名称：**模组同步**
 ![image-20240525105310028](README.assets/image-20240525105310028.png)![image-20240525105342683](README.assets/image-20240525105342683.png)
 
 URL: <https://steamcommunity.com/sharedfiles/filedetails/stats/3032653569>
-
-<iframe src="https://steamcommunity.com/sharedfiles/filedetails/stats/3032653569" style="height:600px"></iframe>
-
-
