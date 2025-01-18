@@ -1,5 +1,13 @@
 # vpet_modsync
 
+<div style="align-items: center; justify-content: center; display: flex; margin: 10px; gap: 10px">
+   <img alt="Steam Downloads" src="https://img.shields.io/steam/downloads/3032653569">
+   <img alt="Steam Favorites" src="https://img.shields.io/steam/favorites/3032653569">
+   <img alt="Steam Subscriptions" src="https://img.shields.io/steam/subscriptions/3032653569">
+   <img alt="Steam Views" src="https://img.shields.io/steam/views/3032653569">
+   <img alt="GitHub License" src="https://img.shields.io/github/license/LiuJiewenTT/vpet_modsync">
+</div>
+
 Steam创意工坊（VPet）MOD名称：**模组同步**
 
 虚拟桌宠模拟器模组同步or链接辅助工具，运行此工具将创建软连接（Junction），以达到不需要复制or移动即可让管理器在离线或非Steam启动状态识别到模组的目的！
